@@ -22,7 +22,7 @@
 
 <br/>
 
-[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Try_PulseML-ff69b4?style=for-the-badge)](YOUR_DEMO_URL_HERE)
+[![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Try_PulseML-ff69b4?style=for-the-badge)](https://pulseml-siddhantchandorkar.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/siddhantchandorkar752-ai/PulseML)
 
 </div>
