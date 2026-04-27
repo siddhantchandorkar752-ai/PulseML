@@ -1,4 +1,4 @@
-import logging
+﻿import logging
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from src.config import config
@@ -7,13 +7,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 def load_raw_data() -> pd.DataFrame:
-    logger.info("Loading transaction data...")
-    transaction = pd.read_csv("data/train_transaction.csv", encoding_errors="replace")
-    logger.info("Loading identity data...")
-    identity = pd.read_csv("data/train_identity.csv", encoding_errors="replace")
-    logger.info("Merging datasets...")
-    df = transaction.merge(identity, on="TransactionID", how="left")
-    logger.info(f"Merged shape: {df.shape}")
+    logger.info("Loading creditcard data...")
+    df = pd.read_csv("data/creditcard.csv", encoding_errors="replace")
+    logger.info(f"Loaded shape: {df.shape}")
     return df
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
